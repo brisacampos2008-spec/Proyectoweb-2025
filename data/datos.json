@@ -1,1 +1,23 @@
-[]
+[
+    {
+        "id": 1,
+        "nombre": "Labial Mate",
+        "descripcion": "Colores intensos y duraderos",
+        "imagen": "../img/labial.jpg",
+        "precio": "$12.99"
+    },
+    {
+        "id": 2,
+        "nombre": "Crema Hidratante",
+        "descripcion": "Suavidad y frescura para tu piel",
+        "imagen": "../img/crema.jpg",
+        "precio": "$15.50"
+    },
+    {
+        "id": 3,
+        "nombre": "Perfume Floral",
+        "descripcion": "Aroma dulce y suave",
+        "imagen": "../img/perfume.jpg",
+        "precio": "$22.00"
+    }
+]
