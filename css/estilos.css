@@ -1,31 +1,66 @@
+/* GENERAL */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #fff5f7;
-}
-
-header {
-    background: #ff99b6;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav a {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.hero {
-    background: url("img/cosmeticos.jpg") center/cover no-repeat;
-    padding: 100px 20px;
-    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff7fb;
     color: #333;
 }
 
+h1, h2, h3 {
+    color: #d95f94;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffe3ef;
+    border-bottom: 2px solid #f5b9d7;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #d95f94;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #8b3c5f;
+}
+
+/* HERO */
+.hero {
+    background-image: url('../img/imagen1.png'); /* Puedes cambiarla */
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 50px;
+}
+
+.hero-texto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #d95f94;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #b84372;
+}
+
+/* PRODUCTOS */
 .productos {
     padding: 40px;
     text-align: center;
@@ -33,18 +68,40 @@ nav a {
 
 .item {
     display: inline-block;
-    width: 250px;
+    width: 270px;
     margin: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
 .item img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
-footer {
-    background: #ff99b6;
+/* TESTIMONIOS */
+.testimonios {
+    background-color: #ffe3ef;
+    padding: 40px;
     text-align: center;
-    padding: 15px;
-    color: white;
 }
+
+.card {
+    background: white;
+    margin: 15px auto;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 6px solid #d95f94;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffe3ef;
+    margin-top: 30px;
+}
+
