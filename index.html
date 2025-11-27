@@ -3,71 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Línea de Cosméticos - Belleza Natural</title>
+    <title>BFH BEAUTY LINE</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<!-- HEADER / NAVBAR -->
 <header>
-    <h1>Belleza Natural</h1>
-
+    <div class="logo">BFH <span>BEAUTY LINE</span></div>
     <nav>
-        <a href="#">Inicio</a>
+        <a href="index.html">Inicio</a>
         <a href="page/productos.html">Productos</a>
-        <a href="#">Nosotros</a>
-        <a href="#">Contacto</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
     </nav>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-    <div class="hero-texto">
-        <h2>Cosméticos hechos para ti</h2>
-        <p>Productos de alta calidad y amigables con tu piel.</p>
-        <a class="btn" href="#">Descubrir colección</a>
+    <div class="hero-content">
+        <h1 class="brand-title">BFH <span>BEAUTY LINE</span></h1>
+        <p class="hero-subtitle">Cosméticos de calidad premium para tu cuidado diario</p>
+        <a href="page/productos.html" class="btn-primary">Ver Productos</a>
     </div>
 </section>
 
-<!-- PRODUCTOS -->
-<section class="productos">
-    <h2>Nuestros productos</h2>
-
-    <div class="item">
-        <img src="img/imagen1.png" alt="Labial">
-        <h3>Labial Mate</h3>
-        <p>Colores intensos que duran todo el día.</p>
-    </div>
-
-    <div class="item">
-        <img src="img/crema.jpg" alt="Crema hidratante">
-        <h3>Crema Hidratante</h3>
-        <p>Perfecta para el cuidado diario de tu piel.</p>
-    </div>
+<!-- PRODUCTOS DESTACADOS -->
+<section class="productos" id="productos">
+    <h2>Nuestros Productos</h2>
+    <div id="contenedor-productos" class="grid-productos"></div>
 </section>
 
-<!-- TESTIMONIOS -->
-<section class="testimonios">
-    <h2>Opiniones de nuestras clientas</h2>
+<!-- NOSOTROS -->
+<section class="nosotros" id="nosotros">
+    <h2>Sobre BFH BEAUTY LINE</h2>
+    <p>En BFH BEAUTY LINE creemos en la belleza natural y en productos de alta calidad, cuidadosamente seleccionados para cuidar tu piel y resaltar tu estilo.</p>
+</section>
 
-    <div class="card">
-        <p>“Los mejores cosméticos que he usado, mi piel luce increíble.”</p>
-        <h4>— María López</h4>
-    </div>
-
-    <div class="card">
-        <p>“Los labiales son hermosos y duran muchísimo. ¡Me encantan!”</p>
-        <h4>— Sofía Gómez</h4>
-    </div>
+<!-- CONTACTO -->
+<section class="contacto" id="contacto">
+    <h2>Contáctanos</h2>
+    <form class="formulario-contacto">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea placeholder="Mensaje" rows="4" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
 </section>
 
 <!-- FOOTER -->
 <footer>
-    <p>© 2025 Belleza Natural · Todos los derechos reservados</p>
+    <p>© 2025 BFH BEAUTY LINE · Todos los derechos reservados</p>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
+
+
+
 
