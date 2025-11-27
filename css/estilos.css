@@ -87,6 +87,95 @@ nav a:hover {
     padding: 40px;
     text-align: center;
 }
+<<<<<<< HEAD
+.nosotros {
+    padding: 60px 20px;
+    background: #ffeaf1;
+    text-align: center;
+}
+
+.nosotros h2 {
+    font-size: 32px;
+    color: #b30059;
+    margin-bottom: 30px;
+}
+
+.nosotros-contenido {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nosotros-contenido img {
+    width: 350px;
+    border-radius: 15px;
+}
+
+.texto-nosotros {
+    width: 350px;
+    text-align: left;
+}
+
+.texto-nosotros h3 {
+    color: #ff4d88;
+    margin-top: 10px;
+}
+
+.texto-nosotros p {
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.contacto {
+    padding: 60px 20px;
+    background: #ffd6e2;
+    text-align: center;
+}
+
+.contacto h2 {
+    font-size: 32px;
+    color: #b30059;
+    margin-bottom: 25px;
+}
+
+.formulario-contacto {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #0002;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ff99b6;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.formulario-contacto button {
+    padding: 12px;
+    background: #ff4d88;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+    background: #e6005c;
+}
+=======
 
 .card {
     background: white;
@@ -104,4 +193,8 @@ footer {
     background-color: #ffe3ef;
     margin-top: 30px;
 }
+<<<<<<< HEAD
 
+>>>>>>> 4325173f264db97896ac282366cea8c238972f1d
+=======
+>>>>>>> 3456cf4612041db5109bed37b83429c5714e6457
