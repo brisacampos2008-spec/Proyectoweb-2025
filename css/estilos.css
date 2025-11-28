@@ -1,233 +1,191 @@
-/* GENERAL */
+/* TIPOGRAFÍAS Y BASE */
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #F5F5F7;
-    color: #1C1C1E;
+    font-family: 'Inter', sans-serif;
+    background: #f6f2ed;
+    color: #3a2f2a;
 }
 
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
-    color: #1C1C1E;
 }
 
-/* HEADER / NAVBAR */
-header {
+/* HEADER */
+.header {
+    width: 100%;
+    background: white;
+    padding: 18px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background: #F5F5F7;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
 }
 
-header .logo {
-    font-size: 1.8rem;
-    font-weight: 900;
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
 }
 
-header .logo span {
-    color: #C49B8E;
+.logo-bfh {
+    font-size: 40px;
+    color: #2c2c2c;
+    letter-spacing: 4px;
+    font-weight: 700;
 }
 
-header nav a {
+.logo-line {
+    font-size: 14px;
+    color: #b8926d;
+    letter-spacing: 4px;
+}
+
+/* NAV */
+.menu a {
     margin-left: 25px;
     text-decoration: none;
-    color: #1C1C1E;
-    font-weight: 600;
+    color: #2c2c2c;
+    font-weight: 500;
     transition: 0.3s;
 }
 
-header nav a:hover {
-    color: #C49B8E;
+.menu a:hover {
+    color: #b8926d;
 }
 
 /* HERO */
 .hero {
-    width: 100%;
-    height: 90vh;
-    background: url("../img/imagen1.png") no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 75vh;
+    background: url("../img/hero.jpg") no-repeat center/cover;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero::before {
     content: "";
     position: absolute;
-    top:0; left:0;
-    width:100%; height:100%;
-    background: rgba(28,28,30,0.4);
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35);
 }
 
-.hero-content {
+.hero-text {
     position: relative;
     z-index: 10;
     text-align: center;
+    color: white;
 }
 
-.brand-title {
-    font-size: 4.5rem;
-    font-weight: 900;
-    letter-spacing: 5px;
-    color: #ffffff;
+.hero-text h1 {
+    font-size: 65px;
 }
 
-.brand-title span {
-    font-size: 5.5rem;
-    color: #C49B8E;
-    letter-spacing: 8px;
-    font-family: 'Didot', serif;
+.hero-text span {
+    color: #d6b08c;
 }
 
-.hero-subtitle {
-    margin-top: 15px;
-    font-size: 1.4rem;
-    color: #F5F5F7;
+.hero-text p {
+    margin-top: 10px;
+    font-size: 18px;
 }
 
-.btn-primary {
+.btn-hero {
     display: inline-block;
     margin-top: 25px;
-    padding: 12px 28px;
-    background: #C49B8E;
+    padding: 12px 35px;
+    background: #b8926d;
     color: white;
-    border-radius: 30px;
-    font-weight: bold;
     text-decoration: none;
+    border-radius: 6px;
     transition: 0.3s;
 }
 
-.btn-primary:hover {
-    background: #A67C6B;
-    transform: scale(1.06);
+.btn-hero:hover {
+    background: #a57d5d;
 }
 
 /* PRODUCTOS */
-.grid-productos {
+.productos {
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.productos h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.contenedor {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
-    padding: 40px;
-}
-
-.grid-productos .tarjeta {
-    background: #F5F5F7;
-    border-radius: 15px;
     padding: 20px;
-    text-align: center;
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.08);
-    transition: 0.3s;
 }
 
-.grid-productos .tarjeta:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 15px 25px rgba(0,0,0,0.12);
-}
-
-.grid-productos .tarjeta img {
-    width: 100%;
-    border-radius: 12px;
-}
-
-/* NOSOTROS */
-.nosotros, .contacto {
-    padding: 60px 20px;
-    text-align: center;
-    background: #E8DDD1;
-    margin-top: 20px;
-}
-
-.nosotros h2, .contacto h2 {
-    font-size: 2.5rem;
-    color: #1C1C1E;
-    margin-bottom: 20px;
-}
-
-/* FORMULARIO CONTACTO */
-.formulario-contacto {
-    max-width: 500px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.card {
     background: white;
-    padding: 25px;
-    border-radius: 15px;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
 }
 
-.formulario-contacto input,
-.formulario-contacto textarea {
+.card img {
     width: 100%;
-    padding: 10px;
-    border: 2px solid #C49B8E;
-    border-radius: 8px;
-    font-size: 16px;
+    border-radius: 10px;
 }
 
-.formulario-contacto button {
-    padding: 12px;
-    background: #C49B8E;
-    border: none;
-    color: white;
+/* NOSOTRAS */
+.nosotras {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.nosotras h2 {
+    font-size: 40px;
+}
+
+.texto-nosotras {
+    max-width: 700px;
+    margin: auto;
     font-size: 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 700;
 }
 
-.formulario-contacto button:hover {
-    background: #A67C6B;
+/* CREADORAS */
+.creadoras {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.grid-creadoras {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card-creadora {
+    background: white;
+    padding: 20px;
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.foto {
+    width: 100%;
+    height: 220px;
+    background: #d9c7b8;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 /* FOOTER */
-footer {
+.footer {
     text-align: center;
-    padding: 20px;
-    background: #F5F5F7;
-    margin-top: 30px;
-}
-
-/* DASHBOARD */
-.dashboard-body {
-    display: flex;
-}
-
-.sidebar {
-    width: 220px;
-    background: #D7D2CB;
-    height: 100vh;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.sidebar nav a {
-    display: block;
-    margin: 15px 0;
-    text-decoration: none;
-    color: #1C1C1E;
-    font-weight: 600;
-}
-
-.dashboard {
-    flex: 1;
-    padding: 40px;
-}
-
-.cards {
-    display: flex;
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.card-dashboard {
-    background: #F5F5F7;
-    padding: 20px;
-    border-radius: 15px;
-    flex: 1;
-    text-align: center;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.08);
+    padding: 30px;
+    background: white;
+    margin-top: 40px;
 }
