@@ -1,5 +1,13 @@
-// Cargar productos desde JSON
-fetch("../data/datos.json")
+let rutaJSON = "";
+
+if (location.pathname.includes("page")) {
+    rutaJSON = "../data/datos.json";
+} else {
+    rutaJSON = "data/datos.json";
+}
+
+// Cargar productos
+fetch(rutaJSON)
     .then(res => res.json())
     .then(productos => {
         mostrarProductos(productos);
@@ -7,36 +15,37 @@ fetch("../data/datos.json")
     })
     .catch(err => console.log("Error cargando JSON:", err));
 
-/* Mostrar productos destacados en index */
 function mostrarProductos(productos) {
     const contenedor = document.getElementById("contenedor-productos");
     if (!contenedor) return;
 
-    productos.slice(0, 2).forEach(p => {
-        contenedor.innerHTML += `
-            <div class="tarjeta">
-                <img src="${p.imagen}">
-                <h3>${p.nombre}</h3>
-                <p>${p.descripcion}</p>
-                <p><strong>${p.precio}</strong></p>
-            </div>
+    productos.slice(0, 3).forEach(p => {
+        const tarjeta = document.createElement("div");
+        tarjeta.className = "tarjeta";
+        tarjeta.innerHTML = `
+            <img src="${p.imagen}" alt="${p.nombre}">
+            <h3>${p.nombre}</h3>
+            <p>${p.descripcion}</p>
+            <p><strong>${p.precio}</strong></p>
         `;
+        contenedor.appendChild(tarjeta);
     });
 }
 
-/* Mostrar todos los productos en escritorio.html */
 function mostrarProductosPagina(productos) {
     const lista = document.getElementById("lista-productos");
     if (!lista) return;
 
     productos.forEach(p => {
-        lista.innerHTML += `
-            <div class="tarjeta">
-                <img src="${p.imagen}">
-                <h3>${p.nombre}</h3>
-                <p>${p.descripcion}</p>
-                <p><strong>${p.precio}</strong></p>
-            </div>
+        const tarjeta = document.createElement("div");
+        tarjeta.className = "tarjeta";
+        tarjeta.innerHTML = `
+            <img src="${p.imagen}" alt="${p.nombre}">
+            <h3>${p.nombre}</h3>
+            <p>${p.descripcion}</p>
+            <p><strong>${p.precio}</strong></p>
         `;
+        lista.appendChild(tarjeta);
     });
 }
+

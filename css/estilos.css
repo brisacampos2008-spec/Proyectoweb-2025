@@ -1,146 +1,153 @@
 /* GENERAL */
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #fff7fb;
-    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F5F5F7;
+    color: #1C1C1E;
 }
 
 h1, h2, h3 {
-    color: #d95f94;
+    font-family: 'Playfair Display', serif;
+    color: #1C1C1E;
 }
 
-/* HEADER */
+/* HEADER / NAVBAR */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #ffe3ef;
-    border-bottom: 2px solid #f5b9d7;
+    padding: 20px 40px;
+    background: #F5F5F7;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-nav a {
-    margin: 0 15px;
+header .logo {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+header .logo span {
+    color: #C49B8E;
+}
+
+header nav a {
+    margin-left: 25px;
     text-decoration: none;
-    color: #d95f94;
+    color: #1C1C1E;
     font-weight: 600;
+    transition: 0.3s;
 }
 
-nav a:hover {
-    color: #8b3c5f;
+header nav a:hover {
+    color: #C49B8E;
 }
 
 /* HERO */
 .hero {
-    background-image: url('../img/imagen1.png'); /* Puedes cambiarla */
-    background-size: cover;
-    background-position: center;
-    height: 350px;
+    width: 100%;
+    height: 90vh;
+    background: url("../img/imagen1.png") no-repeat center center/cover;
     display: flex;
+    justify-content: center;
     align-items: center;
-    color: white;
-    padding-left: 50px;
+    position: relative;
 }
 
-.hero-texto h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+.hero::before {
+    content: "";
+    position: absolute;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: rgba(28,28,30,0.4);
 }
 
-.btn {
-    background-color: #d95f94;
-    padding: 10px 20px;
+.hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.brand-title {
+    font-size: 4.5rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: #ffffff;
+}
+
+.brand-title span {
+    font-size: 5.5rem;
+    color: #C49B8E;
+    letter-spacing: 8px;
+    font-family: 'Didot', serif;
+}
+
+.hero-subtitle {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    color: #F5F5F7;
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 28px;
+    background: #C49B8E;
     color: white;
-    border-radius: 5px;
+    border-radius: 30px;
+    font-weight: bold;
     text-decoration: none;
+    transition: 0.3s;
 }
 
-.btn:hover {
-    background-color: #b84372;
+.btn-primary:hover {
+    background: #A67C6B;
+    transform: scale(1.06);
 }
 
 /* PRODUCTOS */
-.productos {
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
     padding: 40px;
-    text-align: center;
 }
 
-.item {
-    display: inline-block;
-    width: 270px;
-    margin: 20px;
-    padding: 15px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-}
-
-.item img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-/* TESTIMONIOS */
-.testimonios {
-    background-color: #ffe3ef;
-    padding: 40px;
-    text-align: center;
-}
-<<<<<<< HEAD
-.nosotros {
-    padding: 60px 20px;
-    background: #ffeaf1;
-    text-align: center;
-}
-
-.nosotros h2 {
-    font-size: 32px;
-    color: #b30059;
-    margin-bottom: 30px;
-}
-
-.nosotros-contenido {
-    max-width: 1000px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-
-.nosotros-contenido img {
-    width: 350px;
+.grid-productos .tarjeta {
+    background: #F5F5F7;
     border-radius: 15px;
-}
-
-.texto-nosotros {
-    width: 350px;
-    text-align: left;
-}
-
-.texto-nosotros h3 {
-    color: #ff4d88;
-    margin-top: 10px;
-}
-
-.texto-nosotros p {
-    color: #333;
-    line-height: 1.5;
-    margin-bottom: 15px;
-}
-.contacto {
-    padding: 60px 20px;
-    background: #ffd6e2;
+    padding: 20px;
     text-align: center;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
 }
 
-.contacto h2 {
-    font-size: 32px;
-    color: #b30059;
-    margin-bottom: 25px;
+.grid-productos .tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.12);
 }
 
+.grid-productos .tarjeta img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* NOSOTROS */
+.nosotros, .contacto {
+    padding: 60px 20px;
+    text-align: center;
+    background: #E8DDD1;
+    margin-top: 20px;
+}
+
+.nosotros h2, .contacto h2 {
+    font-size: 2.5rem;
+    color: #1C1C1E;
+    margin-bottom: 20px;
+}
+
+/* FORMULARIO CONTACTO */
 .formulario-contacto {
     max-width: 500px;
     margin: auto;
@@ -150,51 +157,77 @@ nav a:hover {
     background: white;
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 0 10px #0002;
 }
 
 .formulario-contacto input,
 .formulario-contacto textarea {
     width: 100%;
     padding: 10px;
-    border: 2px solid #ff99b6;
+    border: 2px solid #C49B8E;
     border-radius: 8px;
     font-size: 16px;
 }
 
 .formulario-contacto button {
     padding: 12px;
-    background: #ff4d88;
+    background: #C49B8E;
     border: none;
     color: white;
     font-size: 18px;
     border-radius: 8px;
     cursor: pointer;
+    font-weight: 700;
 }
 
 .formulario-contacto button:hover {
-    background: #e6005c;
-}
-=======
-
-.card {
-    background: white;
-    margin: 15px auto;
-    width: 50%;
-    padding: 20px;
-    border-radius: 10px;
-    border-left: 6px solid #d95f94;
+    background: #A67C6B;
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #ffe3ef;
+    background: #F5F5F7;
     margin-top: 30px;
 }
-<<<<<<< HEAD
 
->>>>>>> 4325173f264db97896ac282366cea8c238972f1d
-=======
->>>>>>> 3456cf4612041db5109bed37b83429c5714e6457
+/* DASHBOARD */
+.dashboard-body {
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    background: #D7D2CB;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar nav a {
+    display: block;
+    margin: 15px 0;
+    text-decoration: none;
+    color: #1C1C1E;
+    font-weight: 600;
+}
+
+.dashboard {
+    flex: 1;
+    padding: 40px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card-dashboard {
+    background: #F5F5F7;
+    padding: 20px;
+    border-radius: 15px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.08);
+}

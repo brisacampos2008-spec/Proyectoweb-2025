@@ -3,63 +3,63 @@
         "id": 1,
         "nombre": "Labial Mate",
         "descripcion": "Colores intensos y duraderos",
-        "imagen": "../img/labial.jpg",
+        "imagen": "../img/imagen1.png",
         "precio": "$12.99"
     },
     {
         "id": 2,
         "nombre": "Crema Hidratante",
         "descripcion": "Suavidad y frescura para tu piel",
-        "imagen": "../img/crema.jpg",
+        "imagen": "../img/crema.png",
         "precio": "$15.50"
     },
     {
         "id": 3,
         "nombre": "Perfume Floral",
         "descripcion": "Aroma dulce y suave",
-        "imagen": "../img/perfume.jpg",
+        "imagen": "../img/perfume.png",
         "precio": "$22.00"
+    },
+    {
+        "id": 4,
+        "nombre": "Serum Facial Glow",
+        "descripcion": "Ilumina y rejuvenece tu piel al instante.",
+        "imagen": "../img/serum.png",
+        "precio": "$18.99"
+    },
+    {
+        "id": 5,
+        "nombre": "Sombras de Ojos Pink Palette",
+        "descripcion": "Colores rosados y morados para looks elegantes.",
+        "imagen": "../img/sombras.png",
+        "precio": "$14.99"
+    },
+    {
+        "id": 6,
+        "nombre": "Rímel Volumen Extremo",
+        "descripcion": "Pestañas largas y definidas todo el día.",
+        "imagen": "../img/rimel.png",
+        "precio": "$11.50"
+    },
+    {
+        "id": 7,
+        "nombre": "Base Líquida Natural Skin",
+        "descripcion": "Cobertura suave y ligera para todo tipo de piel.",
+        "imagen": "../img/base.png",
+        "precio": "$16.75"
+    },
+    {
+        "id": 8,
+        "nombre": "Gloss Brillante Caramelo",
+        "descripcion": "Brillo húmedo y sabor dulce.",
+        "imagen": "../img/gloss.png",
+        "precio": "$8.99"
+    },
+    {
+        "id": 9,
+        "nombre": "Agua Micelar PureSkin",
+        "descripcion": "Limpieza profunda y fresca para tu rostro.",
+        "imagen": "../img/micelar.png",
+        "precio": "$10.00"
     }
 ]
-{
-    "id": 4,
-    "nombre": "Serum Facial Glow",
-    "descripcion": "Ilumina y rejuvenece tu piel al instante.",
-    "imagen": "../img/serum.jpg",
-    "precio": "$18.99"
-},
-{
-    "id": 5,
-    "nombre": "Sombras de Ojos Pink Palette",
-    "descripcion": "Colores rosados y morados para looks elegantes.",
-    "imagen": "../img/sombras.jpg",
-    "precio": "$14.99"
-},
-{
-    "id": 6,
-    "nombre": "Rímel Volumen Extremo",
-    "descripcion": "Pestañas largas y definidas todo el día.",
-    "imagen": "../img/rimel.jpg",
-    "precio": "$11.50"
-},
-{
-    "id": 7,
-    "nombre": "Base Líquida Natural Skin",
-    "descripcion": "Cobertura suave y ligera para todo tipo de piel.",
-    "imagen": "../img/base.jpg",
-    "precio": "$16.75"
-},
-{
-    "id": 8,
-    "nombre": "Gloss Brillante Caramelo",
-    "descripcion": "Brillo húmedo y sabor dulce.",
-    "imagen": "../img/gloss.jpg",
-    "precio": "$8.99"
-},
-{
-    "id": 9,
-    "nombre": "Agua Micelar PureSkin",
-    "descripcion": "Limpieza profunda y fresca para tu rostro.",
-    "imagen": "../img/micelar.jpg",
-    "precio": "$10.00"
-}
