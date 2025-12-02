@@ -1,191 +1,149 @@
-/* TIPOGRAFÍAS Y BASE */
+/* ------ ESTILOS GENERALES ------ */
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #f6f2ed;
-    color: #3a2f2a;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f5f2;
+    color: #333;
 }
 
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-}
-
-/* HEADER */
-.header {
-    width: 100%;
-    background: white;
-    padding: 18px 50px;
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    padding: 20px 50px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
 }
 
 .logo {
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: #000;
 }
 
-.logo-bfh {
-    font-size: 40px;
-    color: #2c2c2c;
-    letter-spacing: 4px;
-    font-weight: 700;
-}
-
-.logo-line {
-    font-size: 14px;
-    color: #b8926d;
-    letter-spacing: 4px;
-}
-
-/* NAV */
-.menu a {
-    margin-left: 25px;
+nav a {
+    margin-left: 20px;
     text-decoration: none;
-    color: #2c2c2c;
-    font-weight: 500;
-    transition: 0.3s;
+    color: #444;
+    font-weight: 600;
 }
 
-.menu a:hover {
-    color: #b8926d;
+nav a.activo,
+nav a:hover {
+    color: #b38b59;
 }
 
-/* HERO */
+/* ------ HERO ------ */
 .hero {
+    background: url('../img/hero.jpg') center/cover no-repeat;
     height: 75vh;
-    background: url("../img/hero.jpg") no-repeat center/cover;
-    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding-left: 80px;
 }
 
-.hero::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.35);
-}
-
-.hero-text {
-    position: relative;
-    z-index: 10;
-    text-align: center;
-    color: white;
-}
-
-.hero-text h1 {
-    font-size: 65px;
-}
-
-.hero-text span {
-    color: #d6b08c;
+.hero-text h2 {
+    font-size: 50px;
+    margin: 0;
 }
 
 .hero-text p {
-    margin-top: 10px;
-    font-size: 18px;
+    width: 50%;
+    font-size: 20px;
 }
 
-.btn-hero {
+.boton {
     display: inline-block;
-    margin-top: 25px;
-    padding: 12px 35px;
-    background: #b8926d;
+    padding: 12px 25px;
+    background-color: #b38b59;
     color: white;
     text-decoration: none;
-    border-radius: 6px;
-    transition: 0.3s;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: bold;
 }
 
-.btn-hero:hover {
-    background: #a57d5d;
+/* ------ PRODUCTOS ------ */
+.contenedor-productos {
+    padding: 40px;
 }
 
-/* PRODUCTOS */
-.productos {
-    padding: 70px 40px;
-    text-align: center;
-}
-
-.productos h2 {
-    font-size: 40px;
-    margin-bottom: 30px;
-}
-
-.contenedor {
+.grid-productos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    padding: 20px;
+    margin-top: 30px;
 }
 
 .card {
-    background: white;
-    padding: 18px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
     text-align: center;
+    border: 1px solid #e4e4e4;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .card img {
     width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    color: #666;
+    font-size: 15px;
+}
+
+/* ------ NOSOTROS ------ */
+.acerca {
+    padding: 50px;
+    background-color: white;
+    margin: 40px;
     border-radius: 10px;
 }
 
-/* NOSOTRAS */
-.nosotras {
-    padding: 80px 40px;
-    text-align: center;
-}
-
-.nosotras h2 {
-    font-size: 40px;
-}
-
-.texto-nosotras {
-    max-width: 700px;
-    margin: auto;
-    font-size: 18px;
-}
-
-/* CREADORAS */
-.creadoras {
-    padding: 80px 40px;
-    text-align: center;
-}
-
-.grid-creadoras {
+/* ------ CONTACTO ------ */
+.formulario {
     display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    gap: 15px;
 }
 
-.card-creadora {
-    background: white;
-    padding: 20px;
-    width: 260px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+.formulario input,
+.formulario textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-.foto {
-    width: 100%;
-    height: 220px;
-    background: #d9c7b8;
-    border-radius: 10px;
-    margin-bottom: 15px;
+button {
+    background-color: #b38b59;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* FOOTER */
-.footer {
+/* ------ FOOTER ------ */
+footer {
+    background-color: #111;
+    color: white;
     text-align: center;
-    padding: 30px;
-    background: white;
-    margin-top: 40px;
+    padding: 20px;
+    margin-top: 50px;
 }
+
