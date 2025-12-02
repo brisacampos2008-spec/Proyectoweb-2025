@@ -61,5 +61,40 @@
         "descripcion": "Su fórmula de larga duración te acompañará en cada momento.",
         "imagen": "../img/rubor.png",
         "precio": "$10.00"
+    },
+    {
+        "id": 10,
+        "nombre": "Polvo Compacto",
+        "descripcion": "Con una cobertura que se siente ligera pero dura todo el día.",
+        "imagen": "../img/polvocompacto.png",
+        "precio": "$12.00"
+    },
+    {
+        "id": 11,
+        "nombre": "Polvo Suelto",
+        "descripcion": "solución para un acabado impecable y duradero.",
+        "imagen": "../img/polvosuelto.png",
+        "precio": "$10.00"
+    },
+    {
+        "id": 12,
+        "nombre": "Corrector",
+        "descripcion": "¡Un solo producto para múltiples looks y un acabado profesional que se adapta a ti!.",
+        "imagen": "../img/corrector.png",
+        "precio": "$8.00"
+    },
+    {
+        "id": 13,
+        "nombre": "Brochas",
+        "descripcion": "Herramientas esenciales para un acabado profesional.",
+        "imagen": "../img/brochas.png",
+        "precio": "$4.00"
+    },
+    {
+        "id": 14,
+        "nombre": "Esponjas",
+        "descripcion": "Suave con tu piel.",
+        "imagen": "../img/esponja.png",
+        "precio": "$2.00"
     }
 ]
