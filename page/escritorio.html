@@ -3,27 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos | BFH BEAUTY LINE</title>
+    <title>Escritorio | BFH BEAUTY LINE</title>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body>
+<body class="dashboard-body">
 
-<header>
-    <div class="logo">BFH <span>BEAUTY LINE</span></div>
+<aside class="sidebar">
+    <h2>BFH BEAUTY LINE</h2>
     <nav>
-        <a href="../index.html">Inicio</a>
-        <a href="productos.html">Productos</a>
-        <a href="../index.html#nosotros">Nosotros</a>
-        <a href="../index.html#contacto">Contacto</a>
+        <a href="../index.html">🏠 Inicio</a>
+        <a href="productos.html">💄 Productos</a>
+        <a href="#">📦 Pedidos</a>
+        <a href="#">👩‍💻 Usuarios</a>
+        <a href="#">⚙ Configuración</a>
     </nav>
-</header>
+</aside>
 
-<section class="productos">
-    <h2>Nuestra Colección Completa</h2>
-    <div id="lista-productos" class="grid-productos"></div>
-</section>
+<main class="dashboard">
+    <h1>Panel de Control</h1>
+    <p class="subtitulo">Bienvenida al centro de administración de tu línea de cosméticos</p>
 
-<script src="../js/main.js"></script>
+    <section class="cards">
+        <div class="card-dashboard">
+            <h3>Productos disponibles</h3>
+            <p>24</p>
+        </div>
+
+        <div class="card-dashboard">
+            <h3>Pedidos recibidos</h3>
+            <p>135</p>
+        </div>
+
+        <div class="card-dashboard">
+            <h3>Clientes registrados</h3>
+            <p>89</p>
+        </div>
+    </section>
+
+    <section class="ultimos">
+        <h2>Últimos productos añadidos</h2>
+        <div class="producto-dashboard">
+            <img src="../img/imagen1.png" alt="Labial Mate">
+            <div>
+                <h3>Labial Mate Rosa</h3>
+                <p>Color suave y duradero.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
 </body>
 </html>
 
