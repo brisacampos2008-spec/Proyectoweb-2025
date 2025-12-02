@@ -3,28 +3,28 @@
         "id": 1,
         "nombre": "Labial Mate",
         "descripcion": "Colores intensos y duraderos",
-        "imagen": "../img/imagen1.png",
+        "imagen": "../img/labialesmate.png",
         "precio": "$12.99"
     },
     {
         "id": 2,
         "nombre": "Crema Hidratante",
         "descripcion": "Suavidad y frescura para tu piel",
-        "imagen": "../img/crema.png",
+        "imagen": "../img/skincare.png",
         "precio": "$15.50"
     },
     {
         "id": 3,
-        "nombre": "Perfume Floral",
-        "descripcion": "Aroma dulce y suave",
-        "imagen": "../img/perfume.png",
+        "nombre": "Delineador",
+        "descripcion": "punta fina y suave",
+        "imagen": "../img/delineadores.png",
         "precio": "$22.00"
     },
     {
         "id": 4,
-        "nombre": "Serum Facial Glow",
+        "nombre": "Iluminador",
         "descripcion": "Ilumina y rejuvenece tu piel al instante.",
-        "imagen": "../img/serum.png",
+        "imagen": "../img/iluminador.png",
         "precio": "$18.99"
     },
     {
@@ -38,14 +38,14 @@
         "id": 6,
         "nombre": "Rímel Volumen Extremo",
         "descripcion": "Pestañas largas y definidas todo el día.",
-        "imagen": "../img/rimel.png",
+        "imagen": "../img/rimels.png",
         "precio": "$11.50"
     },
     {
         "id": 7,
         "nombre": "Base Líquida Natural Skin",
         "descripcion": "Cobertura suave y ligera para todo tipo de piel.",
-        "imagen": "../img/base.png",
+        "imagen": "../img/bases.png",
         "precio": "$16.75"
     },
     {
@@ -57,9 +57,9 @@
     },
     {
         "id": 9,
-        "nombre": "Agua Micelar PureSkin",
-        "descripcion": "Limpieza profunda y fresca para tu rostro.",
-        "imagen": "../img/micelar.png",
+        "nombre": "Rubor Compacto Bloomshell",
+        "descripcion": "Su fórmula de larga duración te acompañará en cada momento.",
+        "imagen": "../img/rubor.png",
         "precio": "$10.00"
     }
 ]

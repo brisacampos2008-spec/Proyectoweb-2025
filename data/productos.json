@@ -15,6 +15,6 @@
         "nombre": "Labial Matte",
         "descripcion": "Colores intensos y de larga duración.",
         "precio": 15,
-        "imagen": "img/labial.jpg"
+        "imagen": "../img/labial.jpg"
     }
 ]
